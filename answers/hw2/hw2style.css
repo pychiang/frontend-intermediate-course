@@ -1,0 +1,116 @@
+* {
+    font-family: 微軟正黑體;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    background: url("http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg") no-repeat center fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+.transbox {
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.viewbox {
+    width: 300px;
+    margin: 15px;
+}
+
+.viewbox:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+}
+
+.preview {
+    position: relative;
+}
+
+.preview img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    /* transition-delay: 1s; */
+    background-color: #008CBA;
+}
+
+.preview:hover .overlay {
+    opacity: 1;
+}
+
+.bottom {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.headpic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headpic img {
+    width: 100%;
+}
+
+.intro {
+    color: white;
+    margin-left: 10px;
+}
+
+.channel_name, .host_name {
+    padding: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    text-overflow: ellipsis;
+}
