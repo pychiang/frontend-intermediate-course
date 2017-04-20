@@ -48,6 +48,7 @@ html, body {
 .viewbox:hover {
     -webkit-filter: brightness(1.2);
             filter: brightness(1.2);
+    box-shadow: 5px 5px 15px black;
 }
 
 .preview {
