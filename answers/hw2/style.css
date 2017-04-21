@@ -43,6 +43,8 @@ html, body {
 .viewbox {
     width: 300px;
     margin: 15px;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
 }
 
 .viewbox:hover {
@@ -73,7 +75,6 @@ html, body {
             transition-duration: 0.5s;
     -webkit-transition-timing-function: ease;
             transition-timing-function: ease;
-    /* transition-delay: 1s; */
     background-color: #008CBA;
 }
 
