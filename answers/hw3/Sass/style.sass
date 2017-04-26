@@ -1,0 +1,84 @@
+@charset "UTF-8"
+
+@mixin size($w,$h)
+    width: $w
+    height: $h
+
+@mixin margin-padding($margin:0,$padding:0)
+    margin: $margin
+    padding: $padding
+
+*
+    font-family: 微軟正黑體
+
+html,body
+    @include size(100%,100%)
+    @include margin-padding()
+
+.background
+    @include margin-padding()
+    background: url("../images/background.jpg") no-repeat center fixed
+    background-size: cover
+    overflow: auto
+
+.transbox
+    @include margin-padding()
+    background: rgba(0, 0, 0, 0.5)
+    min-height: 100vh
+    overflow: auto
+
+.container
+    width: 1000px
+    margin: 0 auto
+    padding:
+        top: 30px
+        bottom: 30px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.viewbox
+    width: 300px
+    margin: 15px
+    transition-duration: 0.5s
+    &:hover
+        box-shadow: 5px 5px 15px black
+    &:hover .preview
+        filter: brightness(1.3)
+        cursor: pointer
+        
+
+.preview
+    position: relative
+    transition-duration: 0.5s
+    img
+        width: 100%
+        display: block
+
+.bottom
+    background: rgba(0, 0, 0, 0.7)
+    padding: 10px
+    display: flex
+    align-items: center
+
+.headpic
+    @include size(60px,60px)
+    border-radius: 50%
+    overflow: hidden
+    &:hover
+        cursor: pointer
+    img
+        width: 100%
+
+.intro
+    color: white
+    margin-left: 10px
+
+.channel_name,.host_name
+    padding: 1px
+    overflow: hidden
+    white-space: nowrap
+    width: 200px
+    text-overflow: ellipsis
+    &:hover
+        cursor: pointer
