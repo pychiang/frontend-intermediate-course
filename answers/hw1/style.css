@@ -16,7 +16,7 @@ html, body {
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  background-image: url("http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg");
+  background-image: url("images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   overflow: auto;
@@ -63,7 +63,7 @@ html, body {
 .top {
   width: 100%;
   height: 180px;
-  background-image: url("https://static-cdn.jtvnw.net/ttv-static/404_preview-320x180.jpg");
+  background-image: url("images/preview.jpg");
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -81,7 +81,7 @@ html, body {
   left: 10px;
   bottom: -20px;
   display: inline-block;
-  background-image: url("https://static-cdn.jtvnw.net/jtv-static/404_preview-300x300.png");
+  background-image: url("images/headpic.png");
   background-size: cover;
 }
 

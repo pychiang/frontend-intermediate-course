@@ -10,7 +10,7 @@ html, body {
 }
 
 .background {
-    background: url("http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg") no-repeat center fixed;
+    background: url("images/background.jpg") no-repeat center fixed;
     background-size: cover;
     margin: 0px;
     padding: 0px;
