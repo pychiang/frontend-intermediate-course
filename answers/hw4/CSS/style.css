@@ -1,0 +1,86 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.background {
+  margin: 0;
+  padding: 0;
+  background: url("../images/background.jpg") no-repeat center fixed;
+  background-size: cover;
+  overflow: auto; }
+
+.transbox {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  overflow: auto; }
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.viewbox {
+  width: 300px;
+  margin: 15px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+  .viewbox:hover {
+    box-shadow: 5px 5px 15px black; }
+  .viewbox:hover .preview {
+    -webkit-filter: brightness(1.3);
+            filter: brightness(1.3);
+    cursor: pointer; }
+
+.preview {
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+  .preview img {
+    width: 100%;
+    display: block; }
+
+.bottom {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.headpic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .headpic img {
+    width: 100%; }
+
+.intro {
+  color: white;
+  margin-left: 10px; }
+
+.channel_name, .host_name {
+  padding: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+  text-overflow: ellipsis; }
