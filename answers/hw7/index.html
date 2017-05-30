@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>走向國際：i18n</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="transbox">
+            <div class="menu">
+                <h1 class="title">用中文直播的頻道</h1>
+                <button id="zh-tw" class="langbtn selected" onclick="changeLang('zh-tw')">中文</button>
+                <button id="en" class="langbtn" onclick="changeLang('en')">English</button>
+            </div>
+            <div class="container">
+                <div class="viewbox" id="first_viewbox"></div>
+                <div class="viewbox"></div>
+                <div class="viewbox"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/lang-en.js" type="text/javascript"></script>
+    <script src="JS/lang-zh-tw.js" type="text/javascript"></script>
+    <script src="JS/script.js" type="text/javascript"></script>
+</body>
+</html>
