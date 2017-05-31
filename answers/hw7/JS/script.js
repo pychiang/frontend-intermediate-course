@@ -18,8 +18,8 @@ var getStreams = function() {
             var streams = response.streams;
 
             for (var i = 0; i < streams.length; i++) {
-                $container.append(getViewbox(streams[i]));
-                //$(getViewbox(streams[i])).insertBefore($('#first_viewbox'));
+                //$container.append(getViewbox(streams[i]));
+                $(getViewbox(streams[i])).insertBefore($('#first_viewbox'));
             }
             offset += 10;
             isLoading = false;
@@ -49,36 +49,35 @@ function getViewbox(data) {
     '</div>';
 }
 
-function selectButton() {
-    $('div.menu button').click(function() {
-        $('div.menu button').removeClass('selected');
-        $(this).addClass('selected');
-    });
+function selectButton(lang) {
+    $('#zh-tw').removeClass('selected');
+    $('#en').removeClass('selected');
+    $('#' + lang).addClass('selected');
 }
 
 function changeLang(lang) {
     $('h1.title').text(window.I18N[lang].TITLE);
 
-    selectButton();
+    selectButton(lang);
 
     currentLang = lang;
     offset = 0;
     $container.empty();
-    loadPage();
+    $container.append('<div id="first_viewbox" class="viewbox"></div>');
+    $container.append('<div class="viewbox"></div>');
+    getStreams();
 }
 
 // Load new data when getting close to the bottom
-var loadPage = function() {
-    $(document).ready(function() {
-        getStreams();
-        $(window).scroll(function() {
-            if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
-                if(!isLoading) {
-                    getStreams();
-                }
+$(document).ready(function() {
+    getStreams();
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+            if(!isLoading) {
+                getStreams();
             }
-        });
+        }
     });
-}
+});
 
-loadPage();
+
