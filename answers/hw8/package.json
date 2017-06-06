@@ -1,5 +1,5 @@
 {
-  "name": "HW_8",
+  "name": "hw8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "json-loader": "^0.5.4"
   }
 }
