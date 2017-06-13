@@ -1,5 +1,5 @@
 {
-  "name": "hw9",
+  "name": "HW_9",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,7 +24,6 @@
     "gulp-webpack": "^1.5.0",
     "jquery": "^3.2.1",
     "json-loader": "^0.5.4",
-    "uglify-es": "github:mishoo/UglifyJS2#harmony",
     "uglifyjs-webpack-plugin": "^0.4.3"
   }
 }
