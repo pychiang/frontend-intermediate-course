@@ -1,10 +1,10 @@
-var webpack = require('webpack');
+var path = require('path');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, '/dist'),
     filename: 'bundle.min.js'
   },
   module: {

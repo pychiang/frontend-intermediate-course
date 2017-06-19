@@ -33,9 +33,7 @@
       "src/css/",
       "dist/*.min.css",
       "dist/*.min.js",
-      "node_modules/",
-      "*.config.js",
-      "gulpfile.js"
+      "node_modules/"
     ]
   }
 }
